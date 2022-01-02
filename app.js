@@ -3,7 +3,7 @@ const path = require ('path');
 const cors = require('cors');
 //required parser ,mongoose
 
-var port=process.env.PORT||5000;
+var port = process.env.PORT||5000;
 
 const bodyParser=require('body-parser')
 const mongoose=require("mongoose")
@@ -62,6 +62,6 @@ app.get('/',function(req,res){
 
 //changed port
 
-var server= app.listen(5000,()=>{
+var server = app.listen(port,()=>{
     console.log("Server Ready on 5000");
 });
