@@ -1,31 +1,15 @@
 const express = require('express'); 
 const path = require ('path'); 
 const cors = require('cors');
-//required parser ,mongoose
+//required parser 
+//required cors
 
 var port = process.env.PORT||5000;
 
 const bodyParser=require('body-parser')
 const mongoose=require("mongoose")
 
-const nav= [
-    {
-        link:"/books",
-        title:"Books"
-    },
-    {
-        link:"/authors",
-        title:"Authors"
-    },
-    {
-        link:"/addbook",
-        title:"Add Book"
-    },
-    {
-        link:"/addauthor",
-        title:"Add Author"
-    }
-]
+// nav not required
 
 const loginRouter = require('./src/routes/loginroute');
 const signupRouter = require('./src/routes/signuproute');
